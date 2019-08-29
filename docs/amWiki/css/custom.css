@@ -1,0 +1,22 @@
+@keyframes yami{
+	0%{background: white;}
+	100%{background: black;}
+}
+@keyframes kaimei{
+	0%{background: black;}
+	100%{background: white;}
+}
+*::selection{
+	color: white;
+	background: black;
+}
+del{
+	text-decoration: none;
+	color: black;
+	animation:yami 0.5s linear 1;
+	animation-fill-mode:forwards;
+}
+del:hover{
+	animation:kaimei 0.5s linear 1;
+	animation-fill-mode:forwards;
+}
